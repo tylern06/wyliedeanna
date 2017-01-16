@@ -1,0 +1,49 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        //use for non-angular setup
+        // Animated thumbnails
+		    // var $gallery = $('#mygallery');
+		    // if ($gallery.length) {
+        //   console.log('running lightGallery');
+        //   $gallery.justifiedGallery({
+		    //         border: 6,
+		    //         rowHeight: 150,
+		    //         margins: 10
+		    //        //on justifiedGallery complete event, run lightGallery
+		    //     }).on('jg.complete', function() {
+        //        console.log('running lightGallery');
+		    //         $gallery.lightGallery({
+		    //             thumbnail: true
+		    //         });
+		    //     });
+		    // };
+
+        //use for non-angular setup
+        // $('#mygallery').lightGallery({
+        //     thumbnail:true
+        // });
+
+        // setTimeout(function(){
+        //   // alert("Boom!");
+        //   $("#mygallery").justifiedGallery({
+        //     border: 6,
+        //     rowHeight: 150,
+        //     margins: 10
+        //   });
+        // }, 100);
+
+
+    });
+
+</script>
+<div class='gallery-section' ng-controller='mainCtrl'>
+	<div class='container'>
+    <div id="mygallery" class='demo-gallery'>
+      <!-- <div justified id="justified" repeatDone> -->
+      <a lightGallery ng-repeat='img in images' data-src="{{img}}" data-sub-html="D&W" >
+        <img alt="D&W" ng-src="{{img}}"/>
+      </a>
+    </div>
+  </div>
+</div>
