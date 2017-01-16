@@ -39,8 +39,10 @@ div.powr-countdown-timer {
 }
 
 
-.hero-text {
-  margin-top: 300px;
+@media (min-width: 764px) {
+  .hero-text {
+    margin-top: 300px;
+  }
 }
 
 .hero-text h1, h4 {
@@ -56,12 +58,19 @@ div.powr-countdown-timer {
 .hero-text h4#city {
   margin-bottom: 40px;
 }
-@media (max-width: 380px){
+@media (max-width: 764px){
+  .hero-text {
+    margin-top: 170px;
+  }
   .hero-text h1 {
     font-size: 48px;
     color: white;
     font-weight: 300;
     line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .hero-text h4#city {
+    margin-bottom: 10px;
   }
 }
 
