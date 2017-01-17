@@ -336,14 +336,14 @@ a:active {
   border: 1px solid #75c5b1;
   color: #75c5b1;
   text-align: center;
-  min-width: 160px;
-  height: 55px;
-  line-height: 53px;
+  /*min-width: 160px;*/
+  /*height: 55px;*/
+  /*line-height: 53px;*/
   text-transform: uppercase;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
-  padding: 0;
+  padding: 20px 40px;
   border-radius: 0;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
